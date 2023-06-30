@@ -6,7 +6,7 @@ from pydfs_lineup_optimizer.exceptions import LineupOptimizerException, LineupOp
 from pydfs_lineup_optimizer.lineup_optimizer import LineupOptimizer
 from pydfs_lineup_optimizer.lineup import Lineup
 from pydfs_lineup_optimizer.sites import SitesRegistry
-from pydfs_lineup_optimizer.lineup_exporter import CSVLineupExporter, FantasyDraftCSVLineupExporter
+from pydfs_lineup_optimizer.lineup_exporter import CSVLineupExporter, FantasyDraftCSVLineupExporter,DataFrameLineupExporter
 from pydfs_lineup_optimizer.tz import set_timezone
 from pydfs_lineup_optimizer.stacks import PlayersGroup, TeamStack, PositionsStack, Stack
 from pydfs_lineup_optimizer.exposure_strategy import TotalExposureStrategy, AfterEachExposureStrategy
@@ -18,7 +18,7 @@ from pydfs_lineup_optimizer.player_pool import PlayerFilter
 __all__ = [
     'get_optimizer', 'Site', 'Sport', 'Player', 'LineupOptimizerException', 'LineupOptimizerIncorrectTeamName',
     'LineupOptimizerIncorrectPositionName', 'LineupOptimizerIncorrectCSV', 'LineupOptimizer', 'Lineup',
-    'CSVLineupExporter', 'set_timezone', 'FantasyDraftCSVLineupExporter', 'PlayersGroup', 'TeamStack', 'PositionsStack',
+    'CSVLineupExporter', 'set_timezone', 'FantasyDraftCSVLineupExporter', ',DataFrameLineupExporter','PlayersGroup', 'TeamStack', 'PositionsStack',
     'Stack', 'TotalExposureStrategy', 'AfterEachExposureStrategy', 'StandardFantasyPointsStrategy',
     'RandomFantasyPointsStrategy', 'ProgressiveFantasyPointsStrategy', 'LineupPlayer', 'PlayerFilter',
 ]
